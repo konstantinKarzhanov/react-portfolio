@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="bg-c--gradient">
       <Header children={<Navbar />} />
       <MainContextProvider>
         <Routes>
@@ -21,7 +21,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </MainContextProvider>
-    </>
+    </div>
   );
 }
 

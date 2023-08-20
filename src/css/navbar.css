@@ -1,0 +1,8 @@
+.main-nav {
+  --gap: 2rem;
+  --pad-y: 2.125rem;
+}
+
+.main-nav a {
+  color: currentColor;
+}

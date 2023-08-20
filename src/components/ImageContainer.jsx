@@ -2,8 +2,8 @@ import React from "react";
 
 const ImageContainer = ({ imgHandle }) => {
   return (
-    <div>
-      <img src={imgHandle} />
+    <div className="container--img">
+      <img src={imgHandle} className={`b-radius shadow`} />
     </div>
   );
 };

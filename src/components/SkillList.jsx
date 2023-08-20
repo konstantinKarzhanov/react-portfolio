@@ -1,4 +1,5 @@
 import React from "react";
+import TitleH2 from "./TitleH2";
 
 const SkillList = () => {
   const skillsArr = [
@@ -14,8 +15,11 @@ const SkillList = () => {
   const skillList = skillsArr.map((item, index) => <li key={index}>{item}</li>);
 
   return (
-    <section>
-      <ul>{skillList}</ul>
+    <section className="section--skills flow-spacing--2xl">
+      <TitleH2 children="My skill set includes" />
+      <ul className="grid grid-container grid--ji-c list--circle">
+        {skillList}
+      </ul>
     </section>
   );
 };

@@ -1,0 +1,316 @@
+/* ------------- */
+/* css-variables */
+/* ------------- */
+:root {
+  /* fonts */
+  --ff-sans-normal: "Indie Flower", cursive;
+
+  /* font-sizes */
+  /* --f--3xs: 0.875rem; */
+  /* --f--xxs: 1rem; */
+  /* --f--xs: 1.25rem; */
+  --f--s: 1.5rem;
+  --f--m: 2rem;
+  /* --f--l: 3rem; */
+  /* --f--xl: 4rem; */
+  /* --f--xxl: 5rem; */
+  /* --f--3xl: 6rem; */
+
+  /* spacing */
+  --pad-x: 3rem;
+  --pad-y: 3rem;
+  --pad: 1em;
+  --pad-section: 4.5rem;
+  --flow-space--xs: 0.625rem;
+  --flow-space--s: 1rem;
+  --flow-space--m: 1.25rem;
+  --flow-space--l: 1.5rem;
+  --flow-space--xl: 1.75rem;
+  --flow-space--2xl: 2rem;
+  --flow-space--project: 18rem;
+  --gap: 1rem;
+
+  /* colors */
+  --c--accent-1: rgb(191, 115, 255);
+  --c--shadow: rgb(191, 115, 255, 0.5);
+  --c--bg-gradient: linear-gradient(-45deg, #c2f5c1, #e0b8ff);
+
+  /* grid */
+  --grid--col: auto;
+  --grid--row: auto;
+
+  /* dimensions */
+  --container-width: 90rem;
+
+  /* borders */
+  --dashed-1: 1px dashed currentColor;
+
+  /* border-radius */
+  --radius: 0.5rem;
+}
+
+/* --------------- */
+/* Utility classes */
+/* --------------- */
+.d--block {
+  display: block;
+}
+
+.d--i-block {
+  display: inline-block;
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+
+.grid-container {
+  grid-template-columns: var(--grid--col);
+  grid-template-rows: var(--grid--row);
+}
+
+.grid--ai-c {
+  align-items: center;
+}
+
+.grid--ji-c {
+  justify-items: center;
+}
+
+.grid--all-gap {
+  gap: var(--gap);
+}
+
+/* flexbox */
+.flex {
+  display: flex;
+}
+
+.flex--ai-c {
+  align-items: center;
+}
+
+.flex--jc-c {
+  justify-content: center;
+}
+
+.flex--jc-sb {
+  justify-content: space-between;
+}
+
+.flex-50 {
+  flex: 1 1 50%;
+}
+
+.flex--gap {
+  gap: var(--gap);
+}
+
+/* padding */
+.pad {
+  padding: var(--pad);
+}
+
+/* spacing */
+.flow-spacing--xs > * + * {
+  margin-top: var(--flow-space--xs);
+}
+
+.flow-spacing--s > * + * {
+  margin-top: var(--flow-space--s);
+}
+
+.flow-spacing--m > * + * {
+  margin-top: var(--flow-space--m);
+}
+
+.flow-spacing--l > * + * {
+  margin-top: var(--flow-space--l);
+}
+
+.flow-spacing--xl > * + * {
+  margin-top: var(--flow-space--xl);
+}
+
+.flow-spacing--2xl > * + * {
+  margin-top: var(--flow-space--2xl);
+}
+
+.flow-spacing--project > * + * {
+  margin-top: var(--flow-space--project);
+}
+
+/* margins */
+.m--c {
+  margin: 0 auto;
+}
+
+.mb--3 {
+  margin-bottom: 3rem;
+}
+
+/* typography */
+.text-capital {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* font-family */
+/* .ff-sans-normal {
+  font-family: var(--ff-sans-normal);
+} */
+
+/* font size */
+/* .fs--3xs {
+  font-size: var(--f--3xs);
+} */
+
+/* .fs--xxs {
+  font-size: var(--f--xxs);
+} */
+
+/* .fs--xs {
+  font-size: var(--f--xs);
+} */
+
+.fs--s {
+  font-size: var(--f--s);
+}
+
+.fs--m {
+  font-size: var(--f--m);
+}
+/* 
+.fs--l {
+  font-size: var(--f--l);
+} */
+/* 
+.fs--xl {
+  font-size: var(--f--xl);
+} */
+
+/* .fs--xxl {
+  font-size: var(--f--xxl);
+} */
+
+.fs--3xl {
+  font-size: var(--f--3xl);
+}
+
+/* text color */
+.text--white {
+  color: white;
+}
+
+.text--accent-1 {
+  color: var(--c--accent-1);
+}
+
+/* background color */
+.bg-c--accent-1 {
+  background-color: var(--c--accent-1);
+}
+.bg-c--gradient {
+  background-image: var(--c--bg-gradient);
+}
+
+/* list styles */
+.list--circle {
+  list-style-type: circle;
+}
+
+.list--circle > *::marker {
+  color: var(--c--accent-1);
+}
+
+/* containers */
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+
+.container--80 {
+  --container-width: 80%;
+}
+
+.container--pall {
+  padding-inline: var(--pad-x);
+  padding-block: var(--pad-y);
+}
+
+.container--px {
+  padding-inline: var(--pad-x);
+}
+
+.container--py {
+  padding-block: var(--pad-y);
+}
+
+.container--img {
+  max-width: 30rem;
+  max-height: 30rem;
+}
+
+.container--text {
+  max-width: 44ch;
+}
+
+/* other */
+.b-radius {
+  border-radius: var(--radius);
+}
+
+.shadow {
+  box-shadow: 0 0 30px 1px var(--c--shadow);
+}
+
+.section--about {
+  --gap: 5rem;
+  --radius: 50%;
+}
+
+.section--skills {
+  --grid--col: repeat(4, 1fr);
+  --grid--row: 1fr 1fr;
+}
+
+.section--about,
+.section--skills,
+.section--project,
+.contact-box {
+  padding-block: var(--pad-section);
+}
+
+.article-projects {
+  margin-bottom: calc(var(--flow-space--project) - var(--pad-section));
+}
+
+.contact-box {
+  --gap: 2rem;
+}
+
+.contact-box .contact-link {
+  margin-left: auto;
+}
+
+/* links */
+.contact-link {
+  --pad-x: 3rem;
+  --pad-y: 2rem;
+  --radius: 3.125rem;
+}
+
+.social-link > * {
+  --size: 4rem;
+  width: var(--size);
+  height: var(--size);
+  color: var(--c--accent-1);
+}
+
+.copyright {
+  padding-bottom: 2.5rem;
+}
