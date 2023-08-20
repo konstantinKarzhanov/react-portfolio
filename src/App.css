@@ -255,10 +255,6 @@
   max-height: 30rem;
 }
 
-.container--text {
-  max-width: 44ch;
-}
-
 /* other */
 .b-radius {
   border-radius: var(--radius);
@@ -289,6 +285,10 @@
   margin-bottom: calc(var(--flow-space--project) - var(--pad-section));
 }
 
+.text-box {
+  max-width: 44ch;
+}
+
 .contact-box {
   --gap: 2rem;
 }
@@ -313,4 +313,8 @@
 
 .copyright {
   padding-bottom: 2.5rem;
+}
+
+.section--project:nth-child(even) .container--text {
+  order: 1;
 }

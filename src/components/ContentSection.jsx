@@ -13,7 +13,7 @@ const ContentSection = ({
   return (
     <section className={classHandle}>
       <div className="flex flex--ai-c flex--jc-sb flex--gap">
-        <div className="flow-spacing--2xl">
+        <div className="container--text flow-spacing--2xl">
           {titleHandle && <TitleH2 children={titleHandle} />}
           <TextContainer {...{ descriptionHandle }} />
           {ctaHandle}
