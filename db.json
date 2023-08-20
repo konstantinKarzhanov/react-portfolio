@@ -25,9 +25,16 @@
     },
     {
       "id": 4,
-      "title": "React Workout Planner",
+      "title": "React Feedback App",
       "description": [
-        "This app you can use to keep track of your everyday expenses. You can add, delete, change expenses and put them  into different categories.",
+        "You can use this app to encourage users to leave feedback about your services. Users can add, delete, and change their feedback."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "React Expenses App",
+      "description": [
+        "This app you can use to keep track of your everyday expenses. You can add, delete, change expenses and put them into different categories.",
         "Insights page shows a graph which can help you keep an eye on your money goals."
       ]
     }
