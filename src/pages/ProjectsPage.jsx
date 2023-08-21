@@ -1,8 +1,15 @@
 import React from "react";
+
+// hooks
 import useMainContext from "../hooks/useMainContext";
+
+// components
 import ContentSection from "../components/ContentSection";
 import ContactLink from "../components/ContactLink";
+import Main from "../components/Main";
 import Footer from "../components/Footer";
+
+// images
 import pic_1 from "../assets/project-image-1.png";
 import pic_2 from "../assets/project-image-2.png";
 import pic_3 from "../assets/project-image-3.png";
@@ -37,20 +44,21 @@ const ProjectPage = () => {
             ? pic_4
             : pic_5
         }
+        imgAlt={`project-${id}`}
       />
     ));
   };
 
   return (
     <>
-      <main className="container container--px">
-        <article className="article-projects container container--80 flow-spacing--project">
+      <Main>
+        <article className="article--projects container container--80 flow-spacing--project">
           {isLoading && renderLoading()}
           {!isLoading && fetchError && renderError(fetchError)}
           {!isLoading && !fetchError && renderData(dataFromAPI, handleData)}
         </article>
-      </main>
-      <Footer ctaHandle={<ContactLink />} />
+      </Main>
+      <Footer addElementHandle={<ContactLink />} />
     </>
   );
 };

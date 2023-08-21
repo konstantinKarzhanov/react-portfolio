@@ -6,11 +6,13 @@ const Navbar = () => {
   const navArr = ["about", "projects"];
   const navList = navArr.map((item, index) => (
     <li key={index}>
-      <NavLink to={item}>{item}</NavLink>
+      <NavLink to={item} className="d--block">
+        {item}
+      </NavLink>
     </li>
   ));
   return (
-    <nav className="main-nav container container--pall text--accent-1 text-capital">
+    <nav className="main-nav container--pall text--accent-1 text-capital">
       <ul className="flex flex--ai-c flex--gap">{navList}</ul>
     </nav>
   );

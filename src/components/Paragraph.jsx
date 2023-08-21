@@ -1,7 +1,7 @@
 import React from "react";
 
-const Paragraph = ({ text }) => {
-  return <p>{text}</p>;
+const Paragraph = ({ children }) => {
+  return <p>{children}</p>;
 };
 
 export default Paragraph;

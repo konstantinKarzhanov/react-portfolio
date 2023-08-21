@@ -26,7 +26,7 @@ const useFetch = (url) => {
         isMounted &&
           setTimeout(() => {
             setIsLoading(false);
-          }, 2000);
+          }, 1000);
       }
     };
 

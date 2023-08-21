@@ -1,14 +1,19 @@
 import React from "react";
+
+// components
 import ContentSection from "../components/ContentSection";
 import ContactLink from "../components/ContactLink";
 import SkillList from "../components/SkillList";
+import Main from "../components/Main";
 import Footer from "../components/Footer";
+
+// images
 import pic from "../assets/pic.jpeg";
 
 const AboutPage = () => {
   return (
     <>
-      <main className="container container--px">
+      <Main>
         <div className="container container--80">
           <ContentSection
             classHandle="section--about"
@@ -17,12 +22,13 @@ const AboutPage = () => {
               "I am a skilled and passionate Software Developer currently enrolled as a student at Keyin College in St. John's, NL, Canada",
               "I really enjoy learning new things and figuring out how to solve problems",
             ]}
-            ctaHandle={<ContactLink />}
+            addElementHandle={<ContactLink />}
             imgHandle={pic}
+            imgAlt="photo"
           />
           <SkillList />
         </div>
-      </main>
+      </Main>
       <Footer />
     </>
   );
