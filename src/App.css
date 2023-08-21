@@ -32,8 +32,14 @@
 
   /* colors */
   --c--accent-1: rgb(191, 115, 255);
+  --c--accent-2: rgb(194, 245, 193);
+  --c--nav-lines: rgb(255, 255, 255);
   --c--shadow: rgb(191, 115, 255, 0.5);
-  --c--bg-gradient: linear-gradient(-45deg, #c2f5c1, #e0b8ff);
+  --c--bg-gradient: linear-gradient(
+    -45deg,
+    rgb(194, 245, 193, 0.5),
+    rgba(191, 115, 255, 0.5)
+  );
 
   /* grid */
   --grid--col: auto;
@@ -43,7 +49,7 @@
   --container-width: 90rem;
 
   /* border-radius */
-  --radius: 0.5rem;
+  --radius: 3.125rem;
 }
 
 /* --------------- */
@@ -260,6 +266,9 @@
 /* sections */
 .section--about {
   --gap: 5rem;
+}
+
+.section--about .container--img {
   --radius: 50%;
 }
 
@@ -299,7 +308,6 @@
 .contact-link {
   --pad-x: 3rem;
   --pad-y: 2rem;
-  --radius: 3.125rem;
 }
 
 .social-link > * {
