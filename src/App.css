@@ -264,7 +264,8 @@
 }
 
 /* sections */
-.section--about {
+.section--about,
+.section--project {
   --gap: 5rem;
 }
 
@@ -308,6 +309,20 @@
 .contact-link {
   --pad-x: 3rem;
   --pad-y: 2rem;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.contact-link:hover {
+  color: var(--c--accent-1);
+  background-color: var(--c--accent-2);
+}
+
+.social-link {
+  transition: transform 300ms ease-in-out;
+}
+
+.social-link:hover {
+  transform: translateY(-1rem);
 }
 
 .social-link > * {

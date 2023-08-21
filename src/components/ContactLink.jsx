@@ -4,7 +4,7 @@ const ContactLink = () => {
   return (
     <a
       href="mailto:placeholder-email@email.com"
-      className="contact-link d--i-block container--pall text--white bg-c--accent-1 b-radius"
+      className="contact-link d--i-block container--pall text--white bg-c--accent-1 b-radius shadow"
       title="placeholder-email@email.com"
     >
       email me
